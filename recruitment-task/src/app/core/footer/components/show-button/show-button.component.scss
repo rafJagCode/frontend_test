@@ -1,0 +1,32 @@
+.show-button__btn {
+  display: flex;
+  align-items: center;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid var(--bg-color);
+  gap: 1.5rem;
+  padding: 1rem 10rem;
+  transition: border-color linear 200ms;
+  &:hover {
+    border-color: white;
+  }
+  &:hover .show-button__text {
+    color: white;
+  }
+  &:hover .show-button__chevron {
+    stroke: white;
+  }
+}
+.show-button__text {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--text-gray-color);
+  transition: color linear 200ms;
+}
+.show-button__chevron {
+  height: 0.8rem;
+  stroke: var(--text-gray-color);
+  transition: stroke linear 200ms;
+}

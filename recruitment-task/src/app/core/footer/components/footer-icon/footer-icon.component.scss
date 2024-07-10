@@ -1,0 +1,33 @@
+:host {
+  display: block;
+  position: relative;
+  width: min-content;
+  padding: 0.5rem 0.8rem;
+  cursor: pointer;
+  isolation: isolate;
+  &:hover .footer-icon__frame {
+    border-color: var(--accent-color);
+  }
+  &:hover .footer-icon__text {
+    color: var(--text-gray-color);
+  }
+}
+.footer-icon__frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+  aspect-ratio: 1;
+  border: 1px solid var(--bg-color);
+  transition: border-color linear 200ms;
+}
+.footer-icon__text-container {
+  line-height: 1.27;
+}
+.footer-icon__text {
+  font-size: 2.2rem;
+  color: var(--bg-color);
+  text-transform: uppercase;
+  transition: color linear 200ms;
+}

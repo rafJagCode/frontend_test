@@ -1,0 +1,20 @@
+:host {
+  --_margin-y: 1.8rem;
+  height: calc(100% - var(--_margin-y) * 2);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--html-icon-gray-color);
+  transition: background-color linear 200ms;
+  &:hover {
+    background-color: var(--accent-color);
+  }
+}
+.html-icon {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.html-icon__icon {
+  height: 55%;
+}

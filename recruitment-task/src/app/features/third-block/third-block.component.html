@@ -1,1 +1,9 @@
 <app-block-title [text]="title"></app-block-title>
+<div class="third-block__text-container">
+  @for(textRecord of textContentService.textContent$ | async; track
+  textRecord.id){
+  <span id="{{ textRecord.id }}" class="third-block__text-record">{{
+    textRecord.text
+  }}</span>
+  }
+</div>

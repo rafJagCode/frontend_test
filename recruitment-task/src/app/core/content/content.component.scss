@@ -1,7 +1,7 @@
 :host {
   margin-top: var(--header-height);
   background-color: var(--bg-color);
-  padding: 0 2.2rem;
+  padding: 2.2rem;
 }
 .content__title {
   position: relative;
@@ -9,8 +9,8 @@
   width: fit-content;
   font-size: 3.2rem;
   font-weight: 400;
-  margin: 0 auto 6rem auto;
-  padding: 2rem 0;
+  margin: 0 auto 4rem auto;
+  padding-bottom: 2rem;
   &::before {
     content: "";
     position: absolute;
@@ -20,5 +20,14 @@
     height: 1px;
     width: 80%;
     background-color: white;
+  }
+}
+.content__blocks-container {
+  display: grid;
+  justify-items: center;
+  gap: 3rem;
+  & > * {
+    max-width: 100%;
+    min-width: 0;
   }
 }

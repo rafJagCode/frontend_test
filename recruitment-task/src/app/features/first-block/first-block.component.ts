@@ -1,6 +1,11 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BlockTitleComponent } from '../../shared/block-title/block-title.component';
+import {
+  Option,
+  OptionValue,
+  OptionService,
+} from '../../services/option-service/option.service';
 
 @Component({
   selector: 'app-first-block',
@@ -10,11 +15,11 @@ import { BlockTitleComponent } from '../../shared/block-title/block-title.compon
   styleUrl: './first-block.component.scss',
 })
 export class FirstBlockComponent {
-  title = 'block pierwszy';
-  options = [
-    { id: 1, label: 'Opcja pierwsza', value: 'first' },
-    { id: 2, label: 'Opcja druga', value: 'second' },
-    { id: 3, label: 'Opcja losowa', value: 'random' },
+  public title = 'block pierwszy';
+  public options: Option[] = [
+    { id: 1, label: 'Opcja pierwsza', value: OptionValue.First },
+    { id: 2, label: 'Opcja druga', value: OptionValue.Second },
+    { id: 3, label: 'Opcja losowa', value: OptionValue.Random },
   ];
-  selectedOption: any;
+  constructor(public optionService: OptionService) {}
 }

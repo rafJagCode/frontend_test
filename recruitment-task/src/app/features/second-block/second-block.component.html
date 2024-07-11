@@ -1,1 +1,13 @@
-<p>second-block works!</p>
+<section class="second-block">
+  <app-block-title [text]="title"></app-block-title>
+  <div class="second-block__control-buttons">
+    <app-control-button
+      [text]="'zastąp'"
+      [clickFunction]="replaceContent"
+    ></app-control-button>
+    <app-control-button
+      [text]="'doklej'"
+      [clickFunction]="appendContent"
+    ></app-control-button>
+  </div>
+</section>

@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
+import { ControlFrameComponent } from '../control-frame/control-frame.component';
 
 @Component({
   selector: 'app-show-button',
   standalone: true,
-  imports: [],
+  imports: [ControlFrameComponent],
   templateUrl: './show-button.component.html',
-  styleUrl: './show-button.component.scss'
+  styleUrl: './show-button.component.scss',
+  host: { class: 'show-button' },
 })
 export class ShowButtonComponent {
-
+  public show = false;
 }

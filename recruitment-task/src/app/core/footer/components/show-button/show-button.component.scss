@@ -1,3 +1,6 @@
+:host {
+  position: relative;
+}
 .show-button__btn {
   display: flex;
   align-items: center;
@@ -28,5 +31,8 @@
 .show-button__chevron {
   height: 0.8rem;
   stroke: var(--text-gray-color);
-  transition: stroke linear 200ms;
+  transition: all linear 200ms;
+  &--down {
+    rotate: 180deg;
+  }
 }

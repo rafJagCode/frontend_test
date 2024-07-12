@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
-import { OptionValue, OptionService } from '../option-service/option.service';
+import { OptionValue, OptionService } from '../option/option.service';
 import getRandomInt from '../../utils/getRandomInt';
 import data from '../../../assets/data.json';
 

@@ -5,7 +5,7 @@ import {
   Option,
   OptionValue,
   OptionService,
-} from '../../services/option-service/option.service';
+} from '../../services/option/option.service';
 
 @Component({
   selector: 'app-first-block',

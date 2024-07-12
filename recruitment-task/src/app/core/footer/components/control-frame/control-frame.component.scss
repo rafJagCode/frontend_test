@@ -1,0 +1,62 @@
+:host {
+  display: none;
+  opacity: 0;
+  gap: 1em;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 50%;
+  translate: -50% calc(-100% - 4rem);
+  background-color: rgb(243, 229, 229);
+  border-radius: 3px;
+  font-size: var(--fs-200);
+  font-weight: 600;
+  padding: 0.5em;
+  box-shadow: -5px 0 10px 5px rgba(0, 0, 0, 0.5),
+    5px 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+:host(.control-frame--show) {
+  display: grid;
+  opacity: 1;
+  animation: fadeIn linear 200ms;
+  -webkit-animation: fadeIn linear 200ms;
+}
+.control-frame__btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color linear 200ms;
+  &:hover {
+    color: var(--accent-color);
+  }
+  &:hover &-chevron {
+    stroke: var(--accent-color);
+  }
+}
+.control-frame__btn-chevron {
+  stroke: black;
+  rotate: 90deg;
+  height: 0.8em;
+  transition: stroke linear 200ms;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

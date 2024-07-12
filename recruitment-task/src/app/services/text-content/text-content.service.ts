@@ -93,6 +93,7 @@ export class TextContentService {
   }
 
   private isAppendingPossible() {
+    if (this.textContent.size === this.data.length) return false;
     if (
       this.selectedOption === OptionValue.First &&
       this.textContent.has(this.data[0])
@@ -103,11 +104,12 @@ export class TextContentService {
       this.textContent.has(this.data[1])
     )
       return false;
-    if (
-      this.selectedOption === OptionValue.Random &&
-      this.textContent.size === this.data.length
-    )
+    if (this.selectedOption === OptionValue.Random) {
+      for (let i = 2; i < this.data.length; i++) {
+        if (!this.textContent.has(this.data[i])) return true;
+      }
       return false;
+    }
     return true;
   }
 

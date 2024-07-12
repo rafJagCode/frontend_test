@@ -15,11 +15,11 @@ export class SecondBlockComponent {
 
   constructor(public textContentService: TextContentService) {}
 
-  replaceContent(): void {
-    console.log('replace');
-  }
+  replaceTextRecord = (): void => {
+    this.textContentService.replaceTextRecord();
+  };
 
-  appendContent = (): void => {
-    this.textContentService.addTextContent({ id: 100, text: 'test' });
+  appendTextRecord = (): void => {
+    this.textContentService.appendTextRecord();
   };
 }

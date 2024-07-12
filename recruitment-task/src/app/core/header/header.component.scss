@@ -6,6 +6,6 @@
   height: var(--header-height);
   width: 100%;
   background-color: var(--header-color);
-  padding: 0 2.2rem;
+  padding: 0 var(--content-padding);
   z-index: 1;
 }

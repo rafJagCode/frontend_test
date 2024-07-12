@@ -1,7 +1,7 @@
 :host {
   margin-top: var(--header-height);
   background-color: var(--bg-color);
-  padding: 2.2rem;
+  padding: var(--content-padding);
 }
 .content__title {
   position: relative;

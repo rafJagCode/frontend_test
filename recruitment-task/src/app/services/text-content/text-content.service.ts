@@ -145,6 +145,7 @@ export class TextContentService {
     let textRecord = null;
     while (!textRecord || this.textContent.has(textRecord)) {
       textRecord = this.getTextRecord(Source.Data, Skip.FirstAndSecond);
+      if (!textRecord) return;
     }
 
     this.textContent = new Set([...this.textContent, textRecord]);
@@ -164,6 +165,7 @@ export class TextContentService {
 
     while (!newTextRecord || this.textContent.has(newTextRecord)) {
       newTextRecord = this.data[getRandomInt(0, this.data.length)];
+      if (!newTextRecord) return;
     }
 
     const newTextContent = [...this.textContent].map((textRecord) => {

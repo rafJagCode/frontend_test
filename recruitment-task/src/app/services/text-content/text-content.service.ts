@@ -173,4 +173,8 @@ export class TextContentService {
 
     this.textContent = new Set(newTextContent);
   }
+
+  reset() {
+    this.textContent = new Set();
+  }
 }

@@ -24,7 +24,7 @@ enum Source {
 })
 export class TextContentService {
   private readonly data: TextRecord[] = data;
-  private selectedOption?: OptionValue;
+  private selectedOption: OptionValue | null = null;
   private readonly _textContent = new BehaviorSubject<Set<TextRecord>>(
     new Set()
   );

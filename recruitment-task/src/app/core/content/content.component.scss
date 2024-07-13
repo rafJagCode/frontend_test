@@ -27,7 +27,35 @@
   justify-items: center;
   gap: 3rem;
   & > * {
+    width: 100%;
     max-width: 100%;
     min-width: 0;
+  }
+}
+
+@media (width>600px) and (width<780px) {
+  .content__blocks-container {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 5rem;
+    & app-third-block {
+      grid-column: 1/3;
+    }
+  }
+}
+@media (width>780px) {
+  .content__blocks-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    & app-second-block {
+      justify-self: center;
+    }
+  }
+}
+
+@media (width>960px) {
+  :host {
+    padding: 6rem var(--content-padding);
+  }
+  .content__title {
+    margin: 0 auto 2.1em auto;
   }
 }

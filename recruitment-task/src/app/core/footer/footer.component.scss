@@ -1,7 +1,14 @@
 :host {
-  padding: 1.8rem var(--content-padding);
+  padding: 2.2rem 2rem;
   background-color: var(--footer-color);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  overflow: clip;
+}
+
+@media (width>960px) {
+  :host {
+    padding: 1.7rem 6rem;
+  }
 }

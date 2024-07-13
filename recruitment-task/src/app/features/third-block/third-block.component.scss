@@ -2,6 +2,7 @@
   text-align: center;
   min-height: 20rem;
   padding-bottom: 2rem;
+  padding-top: 0.5rem;
 }
 .third-block__text-record {
   font-size: var(--fs-300);
@@ -10,4 +11,10 @@
 .third-block__empty-info {
   font-size: var(--fs-500);
   color: var(--text-gray-color);
+}
+
+@media (width>780px) {
+  :host ::ng-deep h2.block-title {
+    text-align: right;
+  }
 }

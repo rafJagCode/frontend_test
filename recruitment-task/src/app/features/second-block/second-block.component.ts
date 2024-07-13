@@ -9,6 +9,7 @@ import { TextContentService } from '../../services/text-content/text-content.ser
   imports: [BlockTitleComponent, ControlButtonComponent],
   templateUrl: './second-block.component.html',
   styleUrl: './second-block.component.scss',
+  host: { class: 'second-block' },
 })
 export class SecondBlockComponent {
   public title = 'blok drugi';

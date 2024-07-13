@@ -9,5 +9,6 @@ import { ShowButtonComponent } from './components/show-button/show-button.compon
   imports: [FooterIconComponent, CompanyNameComponent, ShowButtonComponent],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss',
+  host: { class: 'footer' },
 })
 export class FooterComponent {}

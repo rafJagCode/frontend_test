@@ -5,8 +5,7 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './html-icon.component.html',
-  styleUrl: './html-icon.component.scss'
+  styleUrl: './html-icon.component.scss',
+  host: { class: 'html-icon' },
 })
-export class HtmlIconComponent {
-
-}
+export class HtmlIconComponent {}

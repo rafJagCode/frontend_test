@@ -1,15 +1,17 @@
-.company-name__text {
-  display: flex;
-  color: var(--bg-color);
-  font-size: 3rem;
-  margin-left: 14rem;
-  &::before,
-  &::after {
-    content: "";
-    height: 1px;
-    width: 5.5rem;
-    background-color: var(--bg-color);
-    margin: auto 5px;
+.company-name {
+  &__text {
+    display: flex;
+    color: var(--bg-color);
+    font-size: 3rem;
+    margin-left: 14rem;
+    &::before,
+    &::after {
+      content: "";
+      height: 1px;
+      width: 5.5rem;
+      background-color: var(--bg-color);
+      margin: auto 5px;
+    }
   }
 }
 

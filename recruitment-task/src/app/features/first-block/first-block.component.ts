@@ -13,6 +13,7 @@ import {
   imports: [FormsModule, BlockTitleComponent],
   templateUrl: './first-block.component.html',
   styleUrl: './first-block.component.scss',
+  host: { class: 'first-block' },
 })
 export class FirstBlockComponent {
   public title = 'blok pierwszy';

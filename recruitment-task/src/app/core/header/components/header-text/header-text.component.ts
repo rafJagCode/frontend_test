@@ -7,6 +7,7 @@ import { ShowNameService } from '../../../../services/show-name/show-name.servic
   imports: [],
   templateUrl: './header-text.component.html',
   styleUrl: './header-text.component.scss',
+  host: { class: 'header-text' },
 })
 export class HeaderTextComponent {
   public showName: boolean = false;

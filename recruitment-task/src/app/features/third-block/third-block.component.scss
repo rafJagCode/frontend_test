@@ -1,17 +1,19 @@
-.third-block__text-container {
-  text-align: center;
-  min-height: 20rem;
-  padding-bottom: 2rem;
-  padding-top: 0.5rem;
-}
-.third-block__text-record {
-  display: inline;
-  font-size: var(--fs-300);
-  color: var(--text-gray-color);
-}
-.third-block__empty-info {
-  font-size: var(--fs-500);
-  color: var(--text-gray-color);
+.third-block {
+  &__text-container {
+    text-align: center;
+    min-height: 20rem;
+    padding-bottom: 2rem;
+    padding-top: 0.5rem;
+  }
+  &__text-record {
+    display: inline;
+    font-size: var(--fs-300);
+    color: var(--text-gray-color);
+  }
+  &__empty-info {
+    font-size: var(--fs-500);
+    color: var(--text-gray-color);
+  }
 }
 
 @media (width>780px) {

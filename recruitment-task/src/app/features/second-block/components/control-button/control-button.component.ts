@@ -6,6 +6,7 @@ import { Component, Input } from '@angular/core';
   imports: [],
   templateUrl: './control-button.component.html',
   styleUrl: './control-button.component.scss',
+  host: { class: 'control-button' },
 })
 export class ControlButtonComponent {
   @Input() text?: string;

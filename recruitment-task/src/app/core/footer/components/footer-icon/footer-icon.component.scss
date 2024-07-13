@@ -13,24 +13,26 @@
     color: var(--text-gray-color);
   }
 }
-.footer-icon__frame {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  height: 100%;
-  aspect-ratio: 1;
-  border: 1px solid var(--bg-color);
-  transition: all linear 200ms;
-}
-.footer-icon__text-container {
-  line-height: 1.27;
-}
-.footer-icon__text {
-  font-size: var(--fs-700);
-  color: var(--bg-color);
-  text-transform: uppercase;
-  transition: color linear 200ms;
+.footer-icon {
+  &__frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    aspect-ratio: 1;
+    border: 1px solid var(--bg-color);
+    transition: all linear 200ms;
+  }
+  &__text-container {
+    line-height: 1.27;
+  }
+  &__text {
+    font-size: var(--fs-700);
+    color: var(--bg-color);
+    text-transform: uppercase;
+    transition: color linear 200ms;
+  }
 }
 
 @media (width>960px) {

@@ -1,23 +1,29 @@
-.second-block__control-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  padding-top: 1.5rem;
+.second-block {
+  &__control-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 1.5rem;
+  }
 }
 
 @media (width>600px) and (width<780px) {
   :host ::ng-deep h2.block-title {
     text-align: right;
   }
-  .second-block__control-buttons {
-    justify-content: flex-end;
+  .second-block {
+    &__control-buttons {
+      justify-content: flex-end;
+    }
   }
 }
 
 @media (width>960px) {
-  .second-block__control-buttons {
-    gap: 4rem;
-    padding-top: 1rem;
+  .second-block {
+    &__control-buttons {
+      gap: 4rem;
+      padding-top: 1rem;
+    }
   }
 }

@@ -9,5 +9,6 @@ import { FooterComponent } from './core/footer/footer.component';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
   imports: [HeaderComponent, ContentComponent, FooterComponent],
+  host: { class: 'app' },
 })
 export class AppComponent {}

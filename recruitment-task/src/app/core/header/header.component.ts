@@ -8,5 +8,6 @@ import { HeaderTextComponent } from './components/header-text/header-text.compon
   imports: [HtmlIconComponent, HeaderTextComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
+  host: { class: 'header' },
 })
 export class HeaderComponent {}

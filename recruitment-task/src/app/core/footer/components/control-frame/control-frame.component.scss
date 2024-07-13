@@ -21,27 +21,29 @@
   animation: fadeIn linear 200ms;
   -webkit-animation: fadeIn linear 200ms;
 }
-.control-frame__btn {
-  display: flex;
-  align-items: center;
-  gap: 0.7em;
-  background-color: transparent;
-  border: none;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: color linear 200ms;
-  &:hover {
-    color: var(--accent-color);
+.control-frame {
+  &__btn {
+    display: flex;
+    align-items: center;
+    gap: 0.7em;
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color linear 200ms;
+    &:hover {
+      color: var(--accent-color);
+    }
+    &:hover &-chevron {
+      stroke: var(--accent-color);
+    }
   }
-  &:hover &-chevron {
-    stroke: var(--accent-color);
+  &__btn-chevron {
+    stroke: black;
+    rotate: 90deg;
+    height: 0.5em;
+    transition: stroke linear 200ms;
   }
-}
-.control-frame__btn-chevron {
-  stroke: black;
-  rotate: 90deg;
-  height: 0.5em;
-  transition: stroke linear 200ms;
 }
 
 @-webkit-keyframes fadeIn {

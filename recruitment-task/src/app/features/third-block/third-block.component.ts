@@ -9,6 +9,7 @@ import { AsyncPipe } from '@angular/common';
   imports: [AsyncPipe, BlockTitleComponent],
   templateUrl: './third-block.component.html',
   styleUrl: './third-block.component.scss',
+  host: { class: 'third-block' },
 })
 export class ThirdBlockComponent {
   public title =

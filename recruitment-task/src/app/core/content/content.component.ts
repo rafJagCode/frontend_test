@@ -9,5 +9,6 @@ import { ThirdBlockComponent } from '../../features/third-block/third-block.comp
   imports: [FirstBlockComponent, SecondBlockComponent, ThirdBlockComponent],
   templateUrl: './content.component.html',
   styleUrl: './content.component.scss',
+  host: { class: 'content' },
 })
 export class ContentComponent {}

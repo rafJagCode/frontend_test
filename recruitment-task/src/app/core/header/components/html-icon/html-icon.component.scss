@@ -14,7 +14,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.html-icon__icon {
-  height: 60%;
+
+  &__icon {
+    height: 60%;
+  }
 }

@@ -4,40 +4,42 @@
   max-width: 27rem;
   margin-left: 2rem;
 }
-.show-button__btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  border-radius: 3px;
-  cursor: pointer;
-  background-color: transparent;
-  border: 1px solid var(--bg-color);
-  gap: 1.5rem;
-  padding: 1rem 2rem;
-  transition: border-color linear 200ms;
-  &:hover {
-    border-color: white;
+.show-button {
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid var(--bg-color);
+    gap: 1.5rem;
+    padding: 1rem 2rem;
+    transition: border-color linear 200ms;
+    &:hover {
+      border-color: white;
+    }
+    &:hover .show-button__text {
+      color: white;
+    }
+    &:hover .show-button__chevron {
+      stroke: white;
+    }
   }
-  &:hover .show-button__text {
-    color: white;
+  &__text {
+    font-size: var(--fs-500);
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--text-gray-color);
+    transition: color linear 200ms;
   }
-  &:hover .show-button__chevron {
-    stroke: white;
-  }
-}
-.show-button__text {
-  font-size: var(--fs-500);
-  text-transform: uppercase;
-  font-weight: 600;
-  color: var(--text-gray-color);
-  transition: color linear 200ms;
-}
-.show-button__chevron {
-  height: 0.8rem;
-  stroke: var(--text-gray-color);
-  transition: all linear 200ms;
-  &--down {
-    rotate: 180deg;
+  &__chevron {
+    height: 0.8rem;
+    stroke: var(--text-gray-color);
+    transition: all linear 200ms;
+    &--down {
+      rotate: 180deg;
+    }
   }
 }

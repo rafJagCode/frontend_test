@@ -1,13 +1,20 @@
+:host {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
 .first-block__form {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  margin: 0 auto;
+  width: fit-content;
 }
 .first-block__label {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  font-size: var(--fs-400);
+  gap: 1.5rem;
+  font-size: var(--fs-500);
   color: var(--text-gray-color);
   cursor: pointer;
 }
@@ -18,12 +25,12 @@
   background-color: transparent;
   border: 4px solid white;
   border-radius: 50%;
-  height: 32px;
+  height: 1.8em;
   aspect-ratio: 1;
   cursor: pointer;
   &::before {
     content: "";
-    height: 14px;
+    height: 0.9em;
     aspect-ratio: 1;
     border-radius: 50%;
     background-color: white;
@@ -33,5 +40,33 @@
   }
   &:checked::before {
     scale: 1;
+  }
+}
+
+@media (width>600px) {
+  :host {
+    justify-content: start;
+  }
+  .first-block__form {
+    margin: 0;
+  }
+}
+
+@media (width>600px) and (width<780px) {
+  :host ::ng-deep h2.block-title {
+    text-align: left;
+  }
+}
+
+@media (width>960px) {
+  .first-block {
+    &__form {
+      padding-top: 1.3rem;
+      gap: 2.6rem;
+    }
+    &__label {
+      gap: 2.5rem;
+      font-size: calc(var(--fs-500) * 1.2);
+    }
   }
 }

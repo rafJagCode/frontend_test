@@ -1,7 +1,7 @@
 :host {
   margin-top: var(--header-height);
   background-color: var(--bg-color);
-  padding: var(--content-padding);
+  padding: 2.5rem var(--content-padding);
 }
 .content__title {
   position: relative;
@@ -9,8 +9,8 @@
   width: fit-content;
   font-size: var(--fs-800);
   font-weight: 400;
-  margin: 0 auto 4rem auto;
-  padding-bottom: 2rem;
+  margin: 0 auto 1.7em auto;
+  padding-bottom: 0.4em;
   &::before {
     content: "";
     position: absolute;

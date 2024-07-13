@@ -1,27 +1,48 @@
-# RecruitmentTask
+# Zadanie rekrutacyjne
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
+## [🔗 LIVE DEMO ON NETLIFY](https://66931069997015a7c28c6040--dulcet-tulumba-08731f.netlify.app/)
 
-## Development server
+## WYKONANE ZADANIA
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### CELE GŁÓWNE
 
-## Code scaffolding
+- [x] Pocięta strona ma wypełniać całe okno przeglądarki (nie zamykać contentu w kontenerze o stałej szerokości). Przy reponsywności możesz zastosować dowolne breakpointy, samemu uznaj jak będzie najlepiej.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- [x] Header powinien być na stałe przyklejony do topu, Logo HTML5 w headerze powinno linkować do '/' .
 
-## Build
+- [x] Stopka strony w przypadku małej ilości treści w contencie powinna i tak być na samym dole strony a nie 'doklejać' się pod contentem.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- [x] W bloku pierwszym są radiobuttony, ich wybór a następnie kliknięcie przycisku w bloku drugim wykona akcję podmiany lub doklejenia tekstu w bloku ostatnim. Treści które mają zostać użyte należy pobrać z JSONa (szczegóły niżej). Opcja pierwsza wybierze zawsze treść pierwszą, opcja druga drugą a opcja losowa dowolną z pozostałych. Każda osobna treść w ostatnim bloku powinna być objęta tagiem `<article>`. Doklejając treść należy uniknąć powielania już istniejącej treści (w przypadku użycia opcji losowej należy wylosować kolejną jeszcze nie użytą treść).
 
-## Running unit tests
+- [x] Button 'pokaż' w footerze po kliknięciu pokazuje ramkę (wysuwa ją spod footera) z 2 klikalnymi opcjami. Pierwsza przywraca stronę do początkowych ustawień, druga w headerze dokleja Twoje imię i nazwisko.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### PLIK JSON
 
-## Running end-to-end tests
+- [x] Zbudować plik z tablicą przynajmniej 6 elementów zawierających dowolną treść. Wolno w JSONie trzymać dodatkowe dane jeżeli uprości to wykonanie zadania.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### WARUNKI
 
-## Further help
+- [x] Nie używać bootstrapa/tailwinda ani innych podobnych frameworków.
+- [x] Zastosować SCSS.
+- [x] Poniżej 960px według uznania dokonać zmian w projekcie by jak najlepiej przedstawić stronę (najlepiej wykorzystać przykład projektu mobilnego).
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### DODATKOWE PLUSY
+
+- [x] Osadzenie całego zadania w jakimś JSowym frameworku (najlepiej Angular).
+- [x] Brak plików graficznych w końcowym projekcie (brak plików typu jpg, gif, png, svg).
+- [x] CSS IS AWESOME w footerze - po najechaniu myszką ramka (bez tekstu) powinna wykonać animowany obrót.
+- [x] Zastosowanie BEM.
+- [x] Spełnianie zasad a11y.
+- [x] Logiczne wykorzystanie jednostek rem, em, vh, vw (w efekcie jak najmniejsze użycie jednostki px) - w taki sposób by w efekcie responsywność spełniona została jak najmniejszą ilością kodu.
+- [x] Mobile first.
+- [x] Doklejając treść sprawić by w ostatnim bloku treści były posortowane alfabetycznie.
+- [x] Przy doklejaniu treści w przypadku niemożliwości spełnienia warunku by była unikalna wyświetlić stosowny komunikat (np. alert/dialog/modal).
+- [x] Button w footerze ("pokaż") wysuwający ramkę bez użycia JSa.
+
+  _Użyłem co prawda JSa żeby zareagować na kliknięcie, ale samo pojawienie się ramki jest spowodowane zmianą styli. Możliwe byłoby użycie np checkboxa i zmiana styli gdy jest "checked" ale myślę, że nie o to chodziło w tym zadaniu._
+
+- [x] Rezultat prac wrzucić do podglądu na jakąś darmową platformę (np. netlify/heroku).
+
+### ZADANIE NA 6
+
+- [ ] Wykorzystać localStorage do załadowania treści z pliku i ich późniejszego przechowywania oraz napisać dodatkową funkcjonalność pozwalającą na zarządzanie nimi (dodawanie/edycja/usuwanie).

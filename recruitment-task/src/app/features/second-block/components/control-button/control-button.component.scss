@@ -9,7 +9,8 @@
   padding: 1rem 5.5rem;
   transition: all linear 200ms;
   cursor: pointer;
-  &:hover {
+  &:hover,
+  &:focus-visible {
     background: linear-gradient(
       135deg,
       rgba(205, 115, 0, 1) 33%,

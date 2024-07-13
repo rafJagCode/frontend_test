@@ -7,13 +7,23 @@
   --accent-color: #e88200;
   --footer-color: #15161a;
   // TYPOGRAPHY
-  --fs-200: 1.4rem;
+  --fs-200: 1.5rem;
   --fs-300: 1.6rem;
   --fs-400: 1.7rem;
   --fs-500: 1.8rem;
   --fs-600: 2rem;
+  --fs-700: 2.1rem;
   --fs-800: 3.2rem;
   // OTHERS
   --header-height: 10.5rem;
-  --content-padding: 2.2rem;
+  --content-padding: 3rem;
+}
+
+@media (width>960px) {
+  :root {
+    --header-height: 14rem;
+    --content-padding: 6rem;
+    --fs-600: 3.5rem;
+    --fs-800: 4.8rem;
+  }
 }

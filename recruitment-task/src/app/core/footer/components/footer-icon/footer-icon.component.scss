@@ -7,6 +7,7 @@
   isolation: isolate;
   &:hover .footer-icon__frame {
     border-color: var(--accent-color);
+    rotate: 90deg;
   }
   &:hover .footer-icon__text {
     color: var(--text-gray-color);
@@ -20,14 +21,20 @@
   height: 100%;
   aspect-ratio: 1;
   border: 1px solid var(--bg-color);
-  transition: border-color linear 200ms;
+  transition: all linear 200ms;
 }
 .footer-icon__text-container {
   line-height: 1.27;
 }
 .footer-icon__text {
-  font-size: var(--fs-600);
+  font-size: var(--fs-700);
   color: var(--bg-color);
   text-transform: uppercase;
   transition: color linear 200ms;
+}
+
+@media (width>960px) {
+  .footer-icon__text {
+    font-size: calc(var(--fs-700) * 1.25);
+  }
 }

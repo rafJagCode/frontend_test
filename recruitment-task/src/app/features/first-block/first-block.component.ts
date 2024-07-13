@@ -15,7 +15,7 @@ import {
   styleUrl: './first-block.component.scss',
 })
 export class FirstBlockComponent {
-  public title = 'block pierwszy';
+  public title = 'blok pierwszy';
   public options: Option[] = [
     { id: 1, label: 'Opcja pierwsza', value: OptionValue.First },
     { id: 2, label: 'Opcja druga', value: OptionValue.Second },

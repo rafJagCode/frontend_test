@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { OptionValue, OptionService } from '../option/option.service';
 import getRandomInt from '../../utils/getRandomInt';
+import sortAlphabetically from '../../utils/sortAlphabetically';
 import data from '../../../assets/data.json';
 
 export type TextRecord = {
@@ -148,7 +149,12 @@ export class TextContentService {
       if (!textRecord) return;
     }
 
-    this.textContent = new Set([...this.textContent, textRecord]);
+    const sorted = sortAlphabetically(
+      [...this.textContent, textRecord],
+      'text'
+    );
+
+    this.textContent = new Set(sorted);
   }
 
   replaceTextRecord() {

@@ -29,4 +29,11 @@ export class ControlFrameComponent {
   showName() {
     this.showNameService.show();
   }
+
+  openLocalStorageCrudModal() {
+    const localStorageCrudModal = document.getElementById(
+      'localStorageCrudModal'
+    ) as HTMLDialogElement;
+    if (localStorageCrudModal) localStorageCrudModal.showModal();
+  }
 }

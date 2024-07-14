@@ -46,6 +46,9 @@
     height: 0.5em;
     transition: stroke linear 200ms;
   }
+  &__btn-text {
+    text-align: left;
+  }
 }
 
 @-webkit-keyframes fadeIn {

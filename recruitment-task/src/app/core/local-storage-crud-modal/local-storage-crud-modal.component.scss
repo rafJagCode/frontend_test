@@ -1,12 +1,23 @@
 .local-storage-crud-modal {
-  $_padding: 4rem;
+  $_padding: 8rem;
   &__dialog {
-    max-width: 80%;
-    max-height: 80%;
-    margin: auto;
+    margin: 0;
+    min-width: 100%;
+    min-height: 100vh;
     padding: $_padding;
     border: none;
-    border-radius: 3px;
+    background-color: var(--bg-color);
+    &::backdrop {
+      background: var(--header-color);
+    }
+  }
+  &__dialog-content {
+    display: grid;
+    gap: 1rem;
+    max-width: 100%;
+    & > * {
+      min-width: 0;
+    }
   }
   &__close-btn {
     $_size: var(--fs-600);
@@ -29,7 +40,7 @@
       left: 0;
       right: 0;
       height: $_thickness;
-      background-color: black;
+      background-color: var(--text-gray-color);
       border-radius: $_thickness;
       transition: background-color linear 200ms;
     }
@@ -45,6 +56,31 @@
 
     &:after {
       transform: rotate(-45deg);
+    }
+  }
+  &__add-btn {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0.5em 1em;
+    background-color: transparent;
+    border: 1px solid var(--text-gray-color);
+    border-radius: 3px;
+    font-size: var(--fs-400);
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1;
+    color: var(--text-gray-color);
+    cursor: pointer;
+    transition: all linear 200ms;
+    &:hover {
+      border-color: var(--accent-color);
+      color: var(--accent-color);
+    }
+    &:focus-visible {
+      color: var(--accent-color);
+      border-color: var(--accent-color);
+      outline: 2px solid var(--accent-color);
+      outline-offset: 1px;
     }
   }
 }

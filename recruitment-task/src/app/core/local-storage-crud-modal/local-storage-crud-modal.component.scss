@@ -1,0 +1,50 @@
+.local-storage-crud-modal {
+  $_padding: 4rem;
+  &__dialog {
+    max-width: 80%;
+    max-height: 80%;
+    margin: auto;
+    padding: $_padding;
+    border: none;
+    border-radius: 3px;
+  }
+  &__close-btn {
+    $_size: var(--fs-600);
+    $_thickness: 3px;
+
+    position: absolute;
+    top: calc(($_padding - $_size) / 2);
+    right: calc(($_padding - $_size) / 2);
+    border: 0;
+    background: none;
+    width: $_size;
+    height: $_size;
+    cursor: pointer;
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      top: ($_size - $_thickness) / 2;
+      left: 0;
+      right: 0;
+      height: $_thickness;
+      background-color: black;
+      border-radius: $_thickness;
+      transition: background-color linear 200ms;
+    }
+
+    &:hover:before,
+    &:hover:after {
+      background-color: var(--accent-color);
+    }
+
+    &:before {
+      transform: rotate(45deg);
+    }
+
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+}

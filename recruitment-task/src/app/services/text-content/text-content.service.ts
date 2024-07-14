@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { OptionValue, OptionService } from '../option/option.service';
+import { LocalStorageService } from '../local-storage/local-storage.service';
 import getRandomInt from '../../utils/getRandomInt';
 import sortAlphabetically from '../../utils/sortAlphabetically';
-import data from '../../../assets/data.json';
 
 export type TextRecord = {
-  id: number;
+  id: string;
   text: string;
 };
 
@@ -24,16 +24,22 @@ enum Source {
   providedIn: 'root',
 })
 export class TextContentService {
-  private readonly data: TextRecord[] = data;
+  private data: TextRecord[] = [];
   private selectedOption: OptionValue | null = null;
   private readonly _textContent = new BehaviorSubject<Set<TextRecord>>(
     new Set()
   );
   readonly textContent$ = this._textContent.asObservable();
 
-  constructor(optionService: OptionService) {
+  constructor(
+    optionService: OptionService,
+    localStorageService: LocalStorageService
+  ) {
     optionService.selectedOption$.subscribe(
       (selectedOption) => (this.selectedOption = selectedOption)
+    );
+    localStorageService.localStorageData$.subscribe(
+      (data) => (this.data = data)
     );
   }
 

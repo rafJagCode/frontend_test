@@ -1,0 +1,27 @@
+<div class="text-record__container">
+  @if(isEditingEnabled){
+  <input
+    class="text-record__text"
+    type="text"
+    (change)="update()"
+    [(ngModel)]="textRecord.text"
+  />
+  } @else{
+  <div class="text-record__text">{{ textRecord.text }}</div>
+  }
+  <div class="text-record__buttons-container">
+    @if(!isEditingEnabled){<app-text-record-button
+      [text]="'edytuj'"
+      [clickFunction]="edit"
+    ></app-text-record-button
+    >}@else{<app-text-record-button
+      [text]="'zapisz'"
+      [clickFunction]="update"
+    ></app-text-record-button
+    >}
+    <app-text-record-button
+      [text]="'usuń'"
+      [clickFunction]="remove"
+    ></app-text-record-button>
+  </div>
+</div>

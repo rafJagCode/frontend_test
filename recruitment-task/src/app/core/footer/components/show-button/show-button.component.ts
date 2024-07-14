@@ -11,4 +11,8 @@ import { ControlFrameComponent } from '../control-frame/control-frame.component'
 })
 export class ShowButtonComponent {
   public show = false;
+
+  onCloseControlFrame() {
+    if (this.show) this.show = !this.show;
+  }
 }

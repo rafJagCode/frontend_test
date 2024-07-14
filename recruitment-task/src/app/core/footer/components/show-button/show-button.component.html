@@ -1,4 +1,4 @@
-<button class="show-button__btn" (click)="show = !show">
+<button class="show-button__btn" #showButton (click)="show = !show">
   <p class="show-button__text">pokaż</p>
   <svg
     class="show-button__chevron{{ show ? ' show-button__chevron--down' : '' }}"
@@ -13,4 +13,8 @@
     />
   </svg>
 </button>
-<app-control-frame [show]="show"></app-control-frame>
+<app-control-frame
+  [button]="showButton"
+  [show]="show"
+  (closeControlFrame)="onCloseControlFrame()"
+></app-control-frame>

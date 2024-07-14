@@ -7,10 +7,12 @@
     class="local-storage-crud-modal__close-btn"
     (click)="localStorageCrudModal.close()"
   ></button>
-  @for(textRecord of data; track textRecord.id){
-  <app-text-record [textRecord]="textRecord"></app-text-record>
-  }
-  <button class="local-storage-crud-modal__add-btn" (click)="add()">
-    dodaj
-  </button>
+  <div class="local-storage-crud-modal__dialog-content">
+    @for(textRecord of data; track textRecord.id){
+    <app-text-record [textRecord]="textRecord"></app-text-record>
+    }
+    <button class="local-storage-crud-modal__add-btn" (click)="add()">
+      dodaj
+    </button>
+  </div>
 </dialog>

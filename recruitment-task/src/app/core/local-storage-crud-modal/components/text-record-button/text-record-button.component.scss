@@ -1,1 +1,25 @@
-
+.text-record-button {
+  &__btn {
+    padding: 0.5em 1em;
+    background-color: transparent;
+    border: 1px solid var(--text-gray-color);
+    border-radius: 3px;
+    font-size: var(--fs-400);
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1;
+    color: var(--text-gray-color);
+    cursor: pointer;
+    transition: all linear 200ms;
+    &:hover {
+      border-color: var(--accent-color);
+      color: var(--accent-color);
+    }
+    &:focus-visible {
+      color: var(--accent-color);
+      border-color: var(--accent-color);
+      outline: 2px solid var(--accent-color);
+      outline-offset: 1px;
+    }
+  }
+}

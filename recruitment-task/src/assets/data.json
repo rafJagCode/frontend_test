@@ -1,42 +1,12 @@
 [
-  {
-    "id": 1,
-    "text": "1. Programowanie jest procesem tworzenia instrukcji, które komputer może wykonać."
-  },
-  {
-    "id": 2,
-    "text": "2. W JavaScript, funkcje mogą być przypisane do zmiennych i przekazywane jako argumenty."
-  },
-  {
-    "id": 3,
-    "text": "3. Git to popularny system kontroli wersji, który umożliwia śledzenie zmian w kodzie."
-  },
-  {
-    "id": 4,
-    "text": "4. HTML to język znaczników używany do tworzenia struktury stron internetowych."
-  },
-  {
-    "id": 5,
-    "text": "5. CSS służy do stylizacji stron internetowych, umożliwiając kontrolowanie wyglądu elementów."
-  },
-  {
-    "id": 6,
-    "text": "6. React to biblioteka JavaScript używana do budowania interfejsów użytkownika."
-  },
-  {
-    "id": 7,
-    "text": "7. W Pythonie, listy są wszechstronnymi strukturami danych, które mogą przechowywać różne typy obiektów."
-  },
-  {
-    "id": 8,
-    "text": "8. SQL to język zapytań używany do komunikacji z bazami danych."
-  },
-  {
-    "id": 9,
-    "text": "9. Wzorce projektowe to sprawdzone rozwiązania powtarzających się problemów w projektowaniu oprogramowania."
-  },
-  {
-    "id": 10,
-    "text": "10. TypeScript to nadzbiór JavaScript, który dodaje statyczne typowanie do języka."
-  }
+  "1. Programowanie jest procesem tworzenia instrukcji, które komputer może wykonać.",
+  "2. W JavaScript, funkcje mogą być przypisane do zmiennych i przekazywane jako argumenty.",
+  "3. Git to popularny system kontroli wersji, który umożliwia śledzenie zmian w kodzie.",
+  "4. HTML to język znaczników używany do tworzenia struktury stron internetowych.",
+  "5. CSS służy do stylizacji stron internetowych, umożliwiając kontrolowanie wyglądu elementów.",
+  "6. React to biblioteka JavaScript używana do budowania interfejsów użytkownika.",
+  "7. W Pythonie, listy są wszechstronnymi strukturami danych, które mogą przechowywać różne typy obiektów.",
+  "8. SQL to język zapytań używany do komunikacji z bazami danych.",
+  "9. Wzorce projektowe to sprawdzone rozwiązania powtarzających się problemów w projektowaniu oprogramowania.",
+  "10. TypeScript to nadzbiór JavaScript, który dodaje statyczne typowanie do języka."
 ]

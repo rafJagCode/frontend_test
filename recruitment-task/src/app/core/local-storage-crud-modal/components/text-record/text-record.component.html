@@ -1,11 +1,14 @@
 <div class="text-record__container">
   @if(isEditingEnabled){
-  <input
+  <textarea
+    #textarea
     class="text-record__text"
     type="text"
+    rows="1"
+    cols="10000"
     (change)="update()"
     [(ngModel)]="textRecord.text"
-  />
+  ></textarea>
   } @else{
   <div class="text-record__text">{{ textRecord.text }}</div>
   }

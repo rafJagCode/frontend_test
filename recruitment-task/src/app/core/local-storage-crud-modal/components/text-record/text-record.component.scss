@@ -1,6 +1,7 @@
 .text-record {
   &__container {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 1rem;
   }
@@ -16,6 +17,7 @@
     border-radius: 3px;
   }
   &__buttons-container {
+    width: 100%;
     margin-left: auto;
     display: flex;
     gap: 0.5rem;
@@ -33,5 +35,16 @@ textarea.text-record__text {
     border-color: var(--accent-color);
     outline: 2px solid var(--accent-color);
     outline-offset: 1px;
+  }
+}
+
+@media (width>780px) {
+  .text-record {
+    &__container {
+      flex-wrap: nowrap;
+    }
+    &__buttons-container {
+      width: auto;
+    }
   }
 }

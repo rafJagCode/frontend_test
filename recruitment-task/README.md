@@ -1,6 +1,6 @@
 # Zadanie rekrutacyjne
 
-## [🔗 LIVE DEMO ON NETLIFY](https://66931069997015a7c28c6040--dulcet-tulumba-08731f.netlify.app/)
+## [🔗 LIVE DEMO ON NETLIFY](https://669427375679640008c24beb--dulcet-tulumba-08731f.netlify.app/)
 
 ## WYKONANE ZADANIA
 
@@ -45,4 +45,4 @@
 
 ### ZADANIE NA 6
 
-- [ ] Wykorzystać localStorage do załadowania treści z pliku i ich późniejszego przechowywania oraz napisać dodatkową funkcjonalność pozwalającą na zarządzanie nimi (dodawanie/edycja/usuwanie).
+- [x] Wykorzystać localStorage do załadowania treści z pliku i ich późniejszego przechowywania oraz napisać dodatkową funkcjonalność pozwalającą na zarządzanie nimi (dodawanie/edycja/usuwanie).
